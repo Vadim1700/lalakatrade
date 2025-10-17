@@ -429,10 +429,14 @@ html, body {
 }
 
 .theme-light {
-  background-image: none;
-  background-color: #f5f5f5;
+  background-image: url('IMG/svet_fon.png'); /* ✅ путь к светлому фону */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5; /* ✅ fallback, если картинка не загрузится */
   color: #222;
 }
+
 
 /* 🌞 Светлая тема — адаптация блоков */
 .theme-light .signal-block,
@@ -568,4 +572,16 @@ html, body {
 @keyframes fillLoader {
   from { width: 0%; }
   to { width: 100%; }
+}
+
+.buy {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 40px; /* ⬆️ увеличенный размер */
+}
+
+.sell {
+  color: #f44336;
+  font-weight: bold;
+  font-size: 40px; /* ⬆️ увеличенный размер */
 }
