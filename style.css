@@ -14,13 +14,13 @@ body, html {
 
 
 #app {
-  width: 375px;
-  min-height: 667px;
-  max-height: none;
-  overflow-y: auto; /* ✅ авто-прокрутка */
+  width: 100vw; /* адаптивная ширина */
+  max-width: 420px; /* ограничение для больших экранов */
+  min-height: 100vh; /* растягиваем на весь экран */
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s ease;
@@ -585,3 +585,4 @@ html, body {
   font-weight: bold;
   font-size: 40px; /* ⬆️ увеличенный размер */
 }
+
